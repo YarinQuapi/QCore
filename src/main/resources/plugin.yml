@@ -1,0 +1,8 @@
+name: QCore
+version: ${project.version}
+main: me.yarinlevi.qcore.QCore
+api-version: 1.16
+authors: [ Quapi ]
+description: The core plugin for all of Quapi's future plugins
+
+softdepend: [ PlaceholderAPI ]
