@@ -1,8 +1,6 @@
 package me.yarinlevi.qcore.handlers.nms.version;
 
 import me.yarinlevi.qcore.QCore;
-import me.yarinlevi.qcore.handlers.nms.version.versions.Wrapper1_12_R1;
-import me.yarinlevi.qcore.handlers.nms.version.versions.Wrapper1_14_R1;
 import me.yarinlevi.qcore.handlers.nms.version.versions.Wrapper1_16_R3;
 import org.bukkit.Bukkit;
 
@@ -16,9 +14,7 @@ public class VersionMatcher {
     private final String serverVersion = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3].substring(1);
 
     private final List<Class<? extends VersionWrapper>> versions = Arrays.asList(
-            Wrapper1_16_R3.class, // 1.16.4 - 1.16.5
-            Wrapper1_14_R1.class, // 1.14.4
-            Wrapper1_12_R1.class // 1.12.2
+            Wrapper1_16_R3.class // 1.16.4 - 1.16.5
     );
 
     public VersionWrapper match() {
